@@ -64,7 +64,7 @@ async def on_message(message):
 			await message.add_reaction("🐋")#Levi
 			await message.add_reaction("💩")#SoS
 			await message.add_reaction("👑")#CoS
-			await message.add_reaction("💮")#GoS
+			await message.add_reaction("🌺")#GoS
 		if "Now:" in message.content and "Later Today:" in message.content:
 			await message.add_reaction(discord.utils.get(hcs.emojis, name='birdup'))
 			await message.add_reaction(discord.utils.get(hcs.emojis, name='one_one'))
@@ -177,7 +177,7 @@ async def on_message(message):
 				destMentioned = True
 		if destMentioned:
 			logAddReaction("Raid", message)
-			await message.channel.send("\n╔══════════════╗\n║                 RAID                 ║\n╚══════════════╝\nSotP:     :confetti_ball:\nLW:      :tropical_fish: \nEoW:   :earth_americas: \nLevi:     :whale2:\nSoS:     :poop:\nCoS:	:crown:\nGoS:	:white_flower:")
+			await message.channel.send("\n╔══════════════╗\n║                 RAID                 ║\n╚══════════════╝\nSotP:     :confetti_ball:\nLW:      :tropical_fish: \nEoW:   :earth_americas: \nLevi:     :whale2:\nSoS:     :poop:\nCoS:	:crown:\nGoS:	:hibiscus:")
 			await message.channel.send("\n╔══════════════╗\n║                 TIME                 ║\n╚══════════════╝\nNow: <:birdup:562306087823474689>\n1 hr: :one:\n2 hr: :two:\n4 hr: :four:\nLater Today: :alarm_clock:\nAnytime Today: :call_me:")
 			await message.channel.send("\n╔══════════════╗\n║                   <:birdup:562306087823474689>                  ║\n╚══════════════╝")
 
@@ -192,7 +192,7 @@ async def on_message(message):
 		my_ip='Good day human overlord. This is your humble pi. My ip today is %s' % ipaddr
 		await message.channel.send(my_ip)
 
-	#gayBaby
+	#Timeout
 	if message.content.startswith("!birdjail"):
 		canJail = message.author.guild_permissions.administrator or 'Fractal' in message.author.name
 		lessCool = message.guild.get_role(idRemoved)
